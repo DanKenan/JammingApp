@@ -1,0 +1,3 @@
+[submodule "jamming"]
+	path = jamming
+	url = https://github.com/DanKenan/JammingApp.git
