@@ -1,0 +1,22 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: max-content;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background-container{
+  background-image: url('../pictures/BG.jpg');
+  background-color: antiquewhite;
+  /*background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;*/
+  height: 100vh;
+  width: 100vw;
+  background-size:cover; 
+}

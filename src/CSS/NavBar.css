@@ -1,0 +1,30 @@
+.heading{
+    color: indianred;
+}
+
+.formText{
+    color: ivory;
+}
+
+.Image {
+    background-image: url('../pictures/nev-bar.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px; /* Set the desired width of the image */
+    height: 200px;
+}
+
+.navImage {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.custom-option {
+    display: flex;
+    align-items: center;
+}
+
+.song-label {
+    flex-grow: 1;
+}
