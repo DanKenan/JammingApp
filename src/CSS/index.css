@@ -2,6 +2,14 @@ html, body {
   margin: 0px;
   padding: 0px;
   height: max-content;
+  background-color: red;
+  background-image: url('../pictures/BG.jpg');
+  background-size: cover;
+  background-repeat: unset;
+  background-position: center center;
+ 
+
+
 }
 
 code {
@@ -9,14 +17,4 @@ code {
     monospace;
 }
 
-.background-container{
-  background-image: url('../pictures/BG.jpg');
-  background-color: antiquewhite;
-  /*background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 100vh;*/
-  height: 100vh;
-  width: 100vw;
-  background-size:cover; 
-}
+
