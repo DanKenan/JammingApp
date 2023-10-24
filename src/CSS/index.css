@@ -1,12 +1,12 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  height: max-content;
+ /* height: max-content;*/
   background-color: red;
-  background-image: url('../pictures/BG.jpg');
+  background-image: url('../pictures/background_dark.webp');
   background-size: cover;
-  background-repeat: unset;
-  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-position: center center;*/
  
 
 

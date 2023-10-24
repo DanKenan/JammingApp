@@ -1,0 +1,23 @@
+.row{
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo{
+    width: 20%;
+    border-radius: 100px;
+    /*height: auto;*/
+  }
+  
+  .btn {
+    background-color: #5aafcc;
+    padding: 0.5em;
+    margin-left: 0.5em;
+    border-radius: 100px;
+  
+  }
+  
+  .btn:hover{
+    background-color: #e8edea;
+  }

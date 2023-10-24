@@ -1,0 +1,25 @@
+.container {
+    margin: 10px;
+    background-color:bisque;
+    padding: 5px;
+    width: 40%;
+    max-width: 500px;
+    border: 6px solid transparent;
+    border-style: inset;
+    border-image: linear-gradient(45deg, #f06, #c63)20;
+}
+
+.trackList {
+    display: flex;
+    padding-left: 0;
+}
+.trackDetails {
+    display: flex;
+}
+.trackImages {
+    margin-bottom: 4px;
+}
+
+.trackInfo {
+  margin-left: 8px;
+}

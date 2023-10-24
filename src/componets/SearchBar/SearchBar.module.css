@@ -1,0 +1,129 @@
+.searchForm {
+    width: 60%;
+    margin-left: 0;
+}
+
+.formText {
+    text-align: center;
+}
+
+.heading{
+    margin-top: 0;
+    color: indianred;
+    font-size: 2rem;
+}
+
+
+.displayText {
+    color: ivory;
+    font-size: 1.3rem;
+}
+
+.btn_container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  
+.btn_searchDef_track,
+.btn_searchDef_album {
+    padding: 6px;
+    border: none;
+    margin: 0;
+    cursor: pointer; 
+  }
+  
+.btn_searchDef_track {
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
+  
+.btn_searchDef_album {
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+  }
+
+.btn_searchDef_track_active {
+    background-color: #007bff; 
+    color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding: 6px;
+    border: 2px solid goldenrod;
+    border-left: none;
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn_searchDef_album_active {
+    background-color: #007bff; 
+    color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    padding: 6px;
+    border: 2px solid goldenrod;
+    border-right: none;
+    margin: 0;
+    font-weight: bold;
+  }
+
+.btn_searchDef_track:not(.active):hover,
+.btn_searchDef_album:not(.active):hover {
+  background-color: #999; /* Background color for not selected button on hover */
+  color: #fff; /* Text color for not selected button on hover */
+}
+  
+
+.container {
+    display: flex;
+}
+
+.row_singer {
+    width: 40%;
+    min-width: 200px;
+    border: 2px solid saddlebrown;
+}
+
+.row_TrackAlb {
+    width: 60%;
+    min-width: 200px;
+    border: 2px solid saddlebrown;
+}
+
+
+.submitBtn {
+    font-size: 1rem;
+    border-radius: 100px;
+    padding: 0.4em;
+    min-width: 70px;
+    margin-right: 5em;
+}
+
+
+
+.customOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.searchImage {
+    margin-right: 5px;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+.songInfo_side {
+    margin-left: 2px;
+    width: 35%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.songInfo_center {
+    margin-left: 2px;
+    width: 30%;
+}

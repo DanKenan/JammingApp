@@ -1,22 +1,40 @@
-import React from 'react';
-import  './CSS/app.css';
-import SearchBar from './SearchBar';
-import songData from './Data';
+import React, { useState, useEffect } from 'react';
+import './CSS/app.css';
+import SearchBar from './componets/SearchBar/SearchBar'; // Ensure that the path to your components is correct
+import NavBar from './componets/NavBar/NavBar';
+import TrackList from './componets/TrackList/TrackList';
+import Spotify from './Spotify/Spotify';
 
 function App() {
-  return (
-        <div>
-          <header>
-            <h1>JVibeSpot</h1>
-            <h2>Discover the Vibrant Rhythms of Jewish Music!</h2>
-          </header>
-          <main className='pic'>
-            <SearchBar songs = {songData}/>
-          </main>
-        </div>
+  const [selectedOptions, setSelectedOptions] = useState([]);
 
+  const handleSelectedOptions = (selected) => {
+    if (selected.length > 0) {
+      Spotify.search(selected).then((searchResults) => {
+        setSelectedOptions(searchResults);
+      });
+    }
+  };
+
+  useEffect(() => {
+    console.log(selectedOptions);
+  }, [selectedOptions]);
+
+  return (
+    <>
+      <header className='hero'>
+        <NavBar />
+      </header>
+      <main>
+        <section>
+          <SearchBar onSelectedOptions={handleSelectedOptions} searchResults={selectedOptions} />
+        </section>
+        <section>
+          <TrackList selectedOptions={selectedOptions} />
+        </section>
+      </main>
+    </>
   );
 }
 
 export default App;
-
