@@ -4,7 +4,7 @@ import re
 import json
 
 def is_allowed_url(url):
-    # Check if the URL matches the disallowed pattern
+    
     return not re.match(r'^https://www\.nigunmusic\.com/catalogsearch/result/.*$', url)
 
 url = "https://www.nigunmusic.com/artist"
@@ -25,10 +25,8 @@ if is_allowed_url(url):
     a_tags = soup.find_all("a")
     names = [a.get_text() for a in a_tags]
 
-    # Create a dictionary with the names
     data = {'names': names}
 
-    # Save the data to a JSON file
     with open('names.json', 'w') as json_file:
         json.dump(data, json_file)
 
